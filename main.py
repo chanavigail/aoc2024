@@ -1,6 +1,7 @@
 import csv
 
 import day1
+import day2
 
 def read_csv(csvfilename):
     """
@@ -15,10 +16,20 @@ def read_csv(csvfilename):
             rows.append(row[0])
     return rows
 
-days = [day1]
+days = [day1, day2]
 
 if __name__ == "__main__":
     day = input()
+    day = int(day) - 1
+
+    part = input()
+    part = int(part)
+
     data = read_csv("input/day" + day + ".csv")
-    ans = days[int(day) - 1].solution(data)
+    # ans = days[day].solution(data)
+    
+    if part == 1:
+        ans = days[day].part_one(data)
+    else: 
+        ans = days[day].part_two(data)
     print(ans)

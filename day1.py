@@ -1,20 +1,22 @@
-def solution(rows):
-    # left = []
-    # right = []
+def part_one(rows):
+    left = []
+    right = []
 
-    # for row in rows:
-    #     a, b = row.split()
-    #     left.append(int(a))
-    #     right.append(int(b))
+    for row in rows:
+        a, b = row.split()
+        left.append(int(a))
+        right.append(int(b))
     
-    # left.sort()
-    # right.sort()
+    left.sort()
+    right.sort()
 
-    # ans = 0
-    # for i in range(len(left)):
-    #     ans += abs(left[i] - right[i])
+    ans = 0
+    for i in range(len(left)):
+        ans += abs(left[i] - right[i])
 
-    # return ans
+    return ans
+
+def part_two(rows):
 
     left = []   # left list
     right = {}  # dict of k: number in right list, v: num appearances
