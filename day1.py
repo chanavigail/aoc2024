@@ -17,7 +17,6 @@ def part_one(rows):
     return ans
 
 def part_two(rows):
-
     left = []   # left list
     right = {}  # dict of k: number in right list, v: num appearances
 
