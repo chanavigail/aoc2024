@@ -20,12 +20,12 @@ days = [day1, day2]
 
 if __name__ == "__main__":
     day = input()
+    data = read_csv("input/day" + day + ".csv")
     day = int(day) - 1
 
     part = input()
     part = int(part)
 
-    data = read_csv("input/day" + day + ".csv")
     # ans = days[day].solution(data)
     
     if part == 1:
