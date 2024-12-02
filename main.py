@@ -19,11 +19,10 @@ def read_csv(csvfilename):
 days = [day1, day2]
 
 if __name__ == "__main__":
-    day = input()
+    inp = input()
+    day, part = inp.split()
     data = read_csv("input/day" + day + ".csv")
     day = int(day) - 1
-
-    part = input()
     part = int(part)
 
     # ans = days[day].solution(data)
