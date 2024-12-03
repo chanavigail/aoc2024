@@ -2,6 +2,7 @@ import csv
 
 import day1
 import day2
+import day3
 
 def read_csv(csvfilename):
     """
@@ -20,13 +21,13 @@ def read_txt(txtfilename):
     f = open(txtfilename, "r")
     return f.readlines()
 
-days = [day1, day2]
+days = [day1, day2, day3]
 
 if __name__ == "__main__":
     inp = input()
     day, part = inp.split()
     # data = read_csv("input/day" + day + ".csv")
-    data = read_txt("input/day" + day + ".csv")
+    data = read_txt("input/day" + day + ".txt")
     day = int(day) - 1
     part = int(part)
 
