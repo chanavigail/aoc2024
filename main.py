@@ -16,12 +16,17 @@ def read_csv(csvfilename):
             rows.append(row[0])
     return rows
 
+def read_txt(txtfilename):
+    f = open(txtfilename, "r")
+    return f.readlines()
+
 days = [day1, day2]
 
 if __name__ == "__main__":
     inp = input()
     day, part = inp.split()
-    data = read_csv("input/day" + day + ".csv")
+    # data = read_csv("input/day" + day + ".csv")
+    data = read_txt("input/day" + day + ".csv")
     day = int(day) - 1
     part = int(part)
 
