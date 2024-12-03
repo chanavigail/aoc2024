@@ -57,22 +57,3 @@ def part_two(rows):
             if v2: ans += 1
 
     return ans
-
-import csv
-def read_csv(csvfilename):
-    """
-    Reads a csv file and returns a list of list
-    containing rows in the csv file and its entries.
-    """
-    rows = []
-
-    with open(csvfilename, encoding='utf-8') as csvfile:
-        file_reader = csv.reader(csvfile)
-        for row in file_reader:
-            rows.append(row[0])
-    return rows
-
-d = read_csv("./input/test.csv")
-# d = read_csv("./input/day2.csv")
-# part_one(d)
-part_two(d)
