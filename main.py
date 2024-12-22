@@ -4,6 +4,7 @@ import day1
 import day2
 import day3
 import day4
+import day5
 
 def read_csv(csvfilename):
     """
@@ -22,7 +23,7 @@ def read_txt(txtfilename):
     f = open(txtfilename, "r")
     return f.readlines()
 
-days = [day1, day2, day3, day4]
+days = [day1, day2, day3, day4, day5]
 
 if __name__ == "__main__":
     inp = input()
